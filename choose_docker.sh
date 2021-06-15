@@ -3,7 +3,7 @@
 while true
 do
 
- read -p "Please enter 1 for running apachee container, 2 for numPy, 3 for Pandas or 4 for jupyter notes: " user
+ read -p "Please enter: 1 for running APACHEE container, 2 for numPy, 3 for Pandas or 4 for JUPYTER NOTES: " user
  if [ $user -eq "1" ];
  then
    cd ApacheDocker
