@@ -1,0 +1,15 @@
+In order to create the image, you need to cd on the folder of the dockerfile and run "docker build ."
+
+If it fails, try to change the dns from 127.0.0.... to 8.8.8.8 (nano /etc/resolv.conf and add "nameserver 8.8.8.8" for debian systems)
+
+
+
+When you have the image and the id from the build, you can type "docker images" to see the available images
+and "docker tag <the id> <the name>" to set an alias for the image.
+
+In order to run the docker you have to type: "docker run -d -p 80:80 tag_name"
+
+Type "docker ps" to list the running images and "docker ps -a" to list all the existing images.
+
+Now you should be able to open 192.168.2.10:80 on browser and see the index.html (192.168.2.10 is the ip of my local machine that runs the docker image)
+
